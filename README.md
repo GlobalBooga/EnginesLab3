@@ -72,4 +72,4 @@ public abstract class ItemBase : MonoBehaviour, IItemInterface
 - Trigger events. Items notify observers when a trigger event fires. In this case, when the player moves over an item.
 
 **Why is this pattern a good choice for spawning these objects?**
-- We never know when a trigger event will happen. 
+- We never know when a trigger event will happen and we don't care about the items themselves (we don't want to keep a cached reference to each item).
